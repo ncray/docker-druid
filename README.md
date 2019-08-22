@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Fokko/docker-druid.svg?branch=master)](https://travis-ci.org/Fokko/docker-druid)
+
 # Apache Druid (Incubating) Docker Image
 
 [Install Docker](https://docs.docker.com/install/)
