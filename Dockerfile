@@ -1,6 +1,6 @@
 FROM openjdk:8
 
-ENV DRUID_VERSION 0.15.1-incubating
+ENV DRUID_VERSION 0.16.0-incubating
 ENV ZOOKEEPER_VERSION 3.4.14
 
 # Get Druid
