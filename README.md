@@ -8,8 +8,8 @@
 
 Download and launch the docker image:
 ```sh
-docker pull druidio/example-cluster
-docker run --rm -i -p 8888:8888 druidio/example-cluster
+docker pull fokkodriesprong/docker-druid
+docker run --rm -i -p 8888:8888 fokkodriesprong/docker-druid
 ```
 
 Once the cluster has started, you can navigate to [http://localhost:8888](http://localhost:8888). The [Druid router process](../development/router.html), which serves the Druid console, resides at this address.
@@ -19,7 +19,7 @@ Once the cluster has started, you can navigate to [http://localhost:8888](http:/
 To build the docker image yourself
 
 ```sh
-git clone https://github.com/druid-io/docker-druid.git
+git clone https://github.com/Fokko/docker-druid.git
 cd docker-druid
 docker build -t docker-druid .
 docker run --rm -i -p 8888:8888 docker-druid
