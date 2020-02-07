@@ -1,12 +1,13 @@
 FROM openjdk:8
 
-ENV DRUID_VERSION 0.16.0-incubating
+ENV DRUID_VERSION 0.17.0
 ENV ZOOKEEPER_VERSION 3.4.14
+ENV DRUID_SKIP_JAVA_CHECK 1
 
 # Get Druid
 RUN mkdir -p /tmp \
     && cd /tmp/ \
-    && curl -fsLS "https://www.apache.org/dyn/closer.cgi?filename=/incubator/druid/$DRUID_VERSION/apache-druid-$DRUID_VERSION-bin.tar.gz&action=download" | tar xvz \
+    && curl -fsLS "https://www.apache.org/dyn/closer.cgi?filename=/druid/$DRUID_VERSION/apache-druid-$DRUID_VERSION-bin.tar.gz&action=download" | tar xvz \
     && mv apache-druid-$DRUID_VERSION /opt/druid
 
 WORKDIR /opt/druid/
